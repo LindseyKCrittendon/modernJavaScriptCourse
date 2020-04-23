@@ -72,27 +72,27 @@
 // document.body.innerHTML = html;
 
 //create some arrays
-const numbers = [43, 56, 33, 23, 44, 36, 5];
-const numbers2 = new Array(22,45, 33,76,54);
-const fruit = ['apple', 'banana', 'orange', 'pear'];
-const mixed = [22, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
+// const numbers = [43, 56, 33, 23, 44, 36, 5];
+// const numbers2 = new Array(22,45, 33,76,54);
+// const fruit = ['apple', 'banana', 'orange', 'pear'];
+// const mixed = [22, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
 // console.log(mixed);
 
-let val;
-//get array length
-val = numbers.length;
-//lets you know if you are actually working with an array.
-val = Array.isArray(numbers);
-val = Array.isArray('hello');
+// let val;
+// //get array length
+// val = numbers.length;
+// //lets you know if you are actually working with an array.
+// val = Array.isArray(numbers);
+// val = Array.isArray('hello');
 
-//get a single value
+// //get a single value
 
-val = numbers[3];
-val = numbers[0];
-//insert into array
-numbers[2] = 100;
-//find index of value
-val = numbers.indexOf(36);
+// val = numbers[3];
+// val = numbers[0];
+// //insert into array
+// numbers[2] = 100;
+// //find index of value
+// val = numbers.indexOf(36);
 
 //MUTATING ARRAYS
 //add onto end
@@ -126,16 +126,61 @@ val = numbers.indexOf(36);
 // });
 
 //find
-function under50(num){
-    return num < 50;
-}
-//found first number under 50
-val = numbers.find(under50)
+// function under50(num){
+//     return num < 50;
+// }
+// //found first number under 50
+// val = numbers.find(under50)
 
-function over50(num){
-    return num > 50;
-}
-val = numbers.find(over50);
+// function over50(num){
+//     return num > 50;
+// }
+// val = numbers.find(over50);
 
-console.log(numbers);
+// console.log(numbers);
+// console.log(val);
+
+
+//OBJECT LITERALS
+
+const person = {
+firstName: 'Steve',
+lastName: 'Smith',
+age: 30,
+email: 'steve@aol.com',
+hobbies: ['music', 'sports'],
+address: {
+    city: 'Miami',
+    state: 'Florida'
+},
+getBirthYear: function(){
+    return 2020 - this.age;
+}
+};
+
+let val;
+
+val = person;
+//get specific value
+val = person.firstName;
+val = person['firstName'];
+val = person.age;
+val = person.hobbies;
+val = person.hobbies[1],
+val = person.address.state;
+val = person.getBirthYear();
+
 console.log(val);
+
+const people = [
+{name: 'John',
+age: 30,},
+{name: 'Mike',
+age: 23,},
+{name: 'Nancy',
+age: 40}
+];
+
+for(let i = 0; i < people.length; i++){
+console.log(people[i].name)
+};
