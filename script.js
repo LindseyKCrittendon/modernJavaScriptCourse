@@ -185,27 +185,146 @@
 // console.log(people[i].name)
 // };
 
-let val;
+// let val;
 
-const today = new Date();
-let birthday = new Date('9-10-1981 11:25.00');
-birthday = new Date('September 10, 1981');
-birthday = new Date('9/10/1981');
-val = today.getMonth();
-val = today.getDate();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getSeconds();
-val = today.getMilliseconds();
-val = today.getTime();
+// const today = new Date();
+// let birthday = new Date('9-10-1981 11:25.00');
+// birthday = new Date('September 10, 1981');
+// birthday = new Date('9/10/1981');
+// val = today.getMonth();
+// val = today.getDate();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getMilliseconds();
+// val = today.getTime();
 
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setFullYear(1985);
-birthday.setHours(3);
-birthday.setMinutes(30);
-birthday.setSeconds(25);
-console.log(birthday);
+// birthday.setMonth(2);
+// birthday.setDate(12);
+// birthday.setFullYear(1985);
+// birthday.setHours(3);
+// birthday.setMinutes(30);
+// birthday.setSeconds(25);
+// console.log(birthday);
  
-console.log(val);
+// console.log(val);
+
+//IF STATEMENTS
+
+// if(something){
+//     do something
+// }else{
+//     do something else
+// }
+
+const id = 100;
+//equal to
+// if(id == 101){
+// console.log('CORRECT');
+// }else {
+//     console.log('INCORRECT');
+// }
+
+// NOT EQUAL TO
+// if(id != 101){
+// console.log('correct')
+// }else{
+//     console.log('incorrect')
+// };
+
+//equal to value and type - use most of the time
+// if(id === 100){
+//     console.log('correct')
+//     }else{
+//         console.log('incorrect')
+//     };
+
+//     if(id !== 100){
+//         console.log('correct')
+//         }else{
+//             console.log('incorrect')
+//         };
+
+// if(id){
+//     console.log(`the idea is ${id}`);
+// }else{
+//     console.log('NO ID');
+// };
+
+//test if undefined
+// if(typeof id !== 'undefined'){
+//     console.log(`the id is ${id}`);
+// }else{
+//     console.log('NO ID');
+// };
+
+//greater than or less than
+
+// if(id > 200){
+//     console.log('correct');
+// }else{
+//     console.log('incorrect');
+// };
+
+// if(id >= 100){
+//     console.log('correct');
+// }else{
+//     console.log('incorrect');
+// };
+
+// if(id < 200){
+//     console.log('correct');
+// }else{
+//     console.log('incorrect');
+// };
+
+// if(id <= 200){
+//     console.log('correct');
+// }else{
+//     console.log('incorrect');
+// };
+
+
+//IF ELSE
+// const color = 'yellow';
+// if(color === 'red'){
+// console.log(`color is ${color}`);
+// }else if(color === 'blue'){
+//     console.log('color is blue')
+// }else{
+//     console.log('color is not red or blue');
+// }
+
+//LOGICAL OPERATORS
+// const name = 'Steve';
+// const age = 70;
+
+// AND &&
+// if(age > 0 && age < 12){
+// console.log(`${name} is a child`);
+// }else if(age >= 13 && age <= 19){
+//     console.log(`${name} is a teenager`)
+// }else{
+//     console.log(`${name} is an adult`)
+// };
+
+//OR ||
+
+// if(age < 16 || age > 65){
+//     console.log(`${name} can not run in race`)
+// }else{
+//     console.log(`${name} is registered for the race`)
+// };
+
+
+// //TERNARY OPERATOR
+// console.log(id === 100 ? 'Correct' : 'Incorrect');
+
+// //without braces but don't recommend
+// if(id === 100)
+//     console.log('correct');
+// else
+//     console.log('incorrect');
+
+
