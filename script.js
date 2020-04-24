@@ -369,3 +369,47 @@ const id = 100;
 // }
 // console.log(`Today is ${day}`);
 
+
+//FUNCTION DECLARATIONS
+
+function greet(firstName = 'John', lastName = 'Doe'){
+    // if(typeof firstName === 'undefined'){firstName = 'John'}
+    // if(typeof lastName === 'undefined'){lastName = 'Doe'}
+    // console.log('hello');
+    return 'Hello, ' + firstName + ' ' + lastName;
+}
+// console.log(greet());
+
+//FUNCTION EXPRESSIONS
+
+const square = function(x = 3){
+return x*x;
+};
+
+// console.log(square());
+
+//IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+
+// (function(){
+//     console.log('IIFE Ran..');
+// })();
+// (function(name){
+//     console.log('Hello ' + name);
+// })('brad');
+
+//PROPERTY METHODS
+
+const toDo = {
+    add: function(){
+        console.log('add todo..');
+    },
+    edit: function(id){
+console.log(`edit todo ${id}`)
+    }
+}
+toDo.delete = function(){
+    console.log('Delete todo...')
+}
+toDo.add();
+toDo.edit(22);
+toDo.delete();
