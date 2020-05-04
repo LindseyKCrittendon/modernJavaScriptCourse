@@ -544,9 +544,9 @@ const id = 100;
 
 //Global Scope
 
-var a = 1;
-let b = 2;
-const c = 3;
+// var a = 1;
+// let b = 2;
+// const c = 3;
 
 // function test(){
 //   var a = 4;
@@ -568,5 +568,9 @@ const c = 3;
 //     console.log(`Loop: ${a}`);
 // }
 
-console.log('Global Scope: ', a, b, c);
+// console.log('Global Scope: ', a, b, c);
+
+//Section 2: DOM Manipulation
+
+
 
