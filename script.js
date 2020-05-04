@@ -451,7 +451,7 @@ const id = 100;
 // while(i<10);
 
 //LOOP THROUGH ARRAY
-const cars = ['ford', 'chevy', 'honda', 'toyota'];
+// const cars = ['ford', 'chevy', 'honda', 'toyota'];
 
 
 // for(let i = 0; i < cars.length; i++){
@@ -479,12 +479,94 @@ const cars = ['ford', 'chevy', 'honda', 'toyota'];
 
 //FOR IN LOOP
 
-const user = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 40
-}
+// const user = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 40
+// }
 
-for(let x in user){
-console.log(`${x} : ${user[x]}`);
-}
+// for(let x in user){
+// console.log(`${x} : ${user[x]}`);
+// }
+
+//WINDOW METHODS / OBJECTS / PROPERTIES
+
+// console.log(123);
+
+//alert
+// alert('hello world');
+
+//prompt
+
+// const input = prompt();
+// alert(input);
+
+//confirm
+// if(confirm('are you sure')){
+//     console.log('yes');
+// }else{
+//     console.log('no')
+// }
+
+// let val;
+//Outer height and width
+// val = window.outerHeight;
+// val = window.outerWidth;
+
+//Inner height and width
+// val = window.innerHeight;
+// val = window.innerWidth;
+
+//scroll points
+// val = window.scrollY;
+// val = window.scrollX;
+
+//Location object
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.href;
+
+//REdirect
+// window.location.href = 'http://google.com';
+
+//History object
+//put in -1, -2
+// window.history.go();
+
+//navigator object
+//deals with the browser itself
+// val = window.navigator;
+
+// console.log(val);
+
+//Block Scope
+
+//Global Scope
+
+var a = 1;
+let b = 2;
+const c = 3;
+
+// function test(){
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log('function scope: ', a, b, c);  
+// };
+// test();
+
+// if(true){
+//block scope
+// var a = 4;
+// let b = 5;
+// const c = 6;
+// console.log('If scope', a, b, c)
+// };
+
+// for(var a = 0; a < 10; a++){
+//     console.log(`Loop: ${a}`);
+// }
+
+console.log('Global Scope: ', a, b, c);
+
